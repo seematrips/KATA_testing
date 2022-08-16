@@ -3,20 +3,20 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-01-05T10:46:40.530Z",
-        "line": 4,
-        "name": "Option to book a room is available on the page",
+        "start_timestamp": "2022-08-16T21:25:02.014Z",
+        "line": 38,
+        "name": "User cannot book the room",
         "description": "",
-        "id": "book-a-room;option-to-book-a-room-is-available-on-the-page",
+        "id": "book-a-room;user-cannot-book-the-room;;2",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 9880000000,
+              "duration": 9512865600,
               "status": "passed"
             },
-            "line": 5,
+            "line": 27,
             "name": "I am on the home page",
             "match": {
               "location": "features.step_definitions.BookingSteps.i_am_on_the_home_page()"
@@ -25,10 +25,10 @@
           },
           {
             "result": {
-              "duration": 56000000,
+              "duration": 41975500,
               "status": "passed"
             },
-            "line": 6,
+            "line": 28,
             "name": "I browse through the page",
             "match": {
               "location": "features.step_definitions.BookingSteps.i_browse_through_the_page()"
@@ -37,20 +37,92 @@
           },
           {
             "result": {
-              "duration": 104000000,
+              "duration": 111936600,
               "status": "passed"
             },
-            "line": 7,
+            "line": 29,
             "name": "I have the option to book a room",
             "match": {
               "location": "features.step_definitions.BookingSteps.i_have_the_option_to_book_a_room()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 154910900,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "user click on book a room",
+            "match": {
+              "location": "features.step_definitions.BookingSteps.user_click_on_book_a_room()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 436449100,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "user select date",
+            "match": {
+              "location": "features.step_definitions.BookingSteps.user_select_date()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "io.cucumber.core.exception.CucumberException: Step [User enter invalid details:  ,Doe,John.Doe@gmail.com,{double}] is defined with 3 parameters at \u0027features.step_definitions.BookingSteps.user_enter_invalid_details_doe_john_doe_gmail_com(java.lang.String,java.lang.String,java.lang.String)\u0027.\nHowever, the gherkin step has 1 arguments:\n * +32987654321\nStep text: User enter invalid details:  ,Doe,John.Doe@gmail.com,+32987654321\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.arityMismatch(PickleStepDefinitionMatch.java:83)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:42)\r\n\tat io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:64)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:104)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:71)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:199)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:234)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)\r\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)\r\n",
+              "duration": 999500,
+              "status": "failed"
+            },
+            "line": 32,
+            "name": "User enter invalid details:  ,Doe,John.Doe@gmail.com,+32987654321",
+            "match": {
+              "arguments": [
+                {
+                  "val": "+32987654321",
+                  "offset": 53
+                }
+              ],
+              "location": "features.step_definitions.BookingSteps.user_enter_invalid_details_doe_john_doe_gmail_com(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "User Click on Book button",
+            "match": {
+              "location": "features.step_definitions.BookingSteps.user_click_on_book_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000600,
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "User should be able to see message Booking Successful",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Booking Successful",
+                  "offset": 35
+                }
+              ],
+              "location": "features.step_definitions.BookingSteps.user_should_be_able_to_see_message(java.lang.String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@book"
+            "name": "@Room"
           }
         ]
       }

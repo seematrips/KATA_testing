@@ -35,9 +35,12 @@ public class HomePage {
     public void assertBookButtonDisplayed(){
         Assert.assertEquals(true, bookButton.isDisplayed());
     }
+    
 
     public void navigateToHomePage() {
         getDriver().get("https://automationintesting.online/#/");
+        
+        
     }
 }
 
